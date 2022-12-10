@@ -11,8 +11,6 @@ public class Plane {
         this.passengers = passengers;
     }
     public String[] getPassengers() {
-        {
             return passengers;
-        }
     }
 }

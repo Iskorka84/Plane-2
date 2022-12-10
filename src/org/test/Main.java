@@ -21,7 +21,7 @@ public class Main {
             System.out.println(airbus.getPassengers()[i]);
         }
 
-        System.out.println("");
+        System.out.println(" ");
 
         boolean famousPerson = false;
         for (int i = 0; i < airbus.getPassengers().length; i++){
