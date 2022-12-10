@@ -15,8 +15,6 @@ public class Main {
 
         Plane airbus = new Plane(namePassengers);
 
-        airbus.setPassengers(namePassengers);
-
         for (int i = 0; i < namePassengers.length; i++) {
             System.out.println(airbus.getPassengers()[i]);
         }
@@ -24,16 +22,15 @@ public class Main {
         System.out.println(" ");
 
         boolean famousPerson = false;
+
         for (int i = 0; i < airbus.getPassengers().length; i++){
-            if (airbus.getPassengers()[i].equals("Alain Delon")){
-                switchStatement("Alain Delon");
-                famousPerson = true;
-            }
-            else if (airbus.getPassengers()[i].equals("Elvis Presley")){
-                switchStatement("Elvis Presley");
+            String passengerName = airbus.getPassengers()[i];
+            if ("Alain Delon".equals(passengerName) || "Elvis Presley".equals(passengerName)){
+                switchStatement(passengerName);
                 famousPerson = true;
             }
         }
+
         if (!famousPerson){
             switchStatement("Fail");
         }
